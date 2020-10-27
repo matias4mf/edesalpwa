@@ -33,11 +33,16 @@ Página de testeo de Appis para EDESAL Movil
 
   </header>
   <main class="Main">
+
+<h2 style="color: #2e6c80;">Probando objetos:</h2>
+<ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
+<li style="clear: both;"><a href="tel:0800222333725"><img style="float: left;" src="./img/ic_llamar-web.png" alt="llamar por telefono" width="45" /> llamar al 0800 222333725</a></li>
+</ol>
 <p>
 <a href="tel:0800222333725">llamar al 0800 222333725</a>
 </p>
 <p>
- <img id="photo" class="photo">
+ <img id="photo" class="photo" >
  </p>
  <p>
   <input type="file" accept="image/*" capture="camera" id="camera" />
@@ -47,6 +52,7 @@ Página de testeo de Appis para EDESAL Movil
   const camera = document.querySelector('#camera');
   camera.addEventListener('change', function(e) {
     photo.src = URL.createObjectURL(e.target.files[0]);
+	photo.style="width:200px;height:240px;"
   });
 </script>
   <script src="./script.js"></script>
